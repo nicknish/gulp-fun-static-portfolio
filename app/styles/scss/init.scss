@@ -5,7 +5,9 @@
 //frameworks
 
 //global things
+@import 'general/_normalize';
 @import 'general/_reset';
 @import 'layout/_main';
 
 //pages
+@import 'pages/_component';

@@ -1,0 +1,186 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Bevan&text=OpinioNation);
+@import url(http://fonts.googleapis.com/css?family=Lobster&text=Fetch);
+
+.opinionation { 
+	font-family: "Bevan", 'Lato', Calibri, Arial, sans-serif; 
+}
+.fetch { 
+	font-family: "Lobster", 'Lato', Calibri, Arial, sans-serif; 
+}
+
+*, *:after, *:before { 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+body, html { 
+	font-size: 100%; 
+	padding: 0; 
+	margin: 0;
+}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #333;
+    text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-moz-font-feature-settings: "liga" on;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.extlink { text-decoration: underline; }
+
+a:hover {
+	color: #000;
+}
+
+.header {
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 1.4em;
+	opacity: 0.7;
+	visibility: visible;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.header h1 {
+	font-size: 2.125em;
+	line-height: 1.3;
+	margin: 0 0 0.6em 0;
+	float: left;
+	font-weight: 400;
+}
+
+.header > span {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.header > span span:after {
+	width: 30px;
+	height: 30px;
+	left: -12px;
+	font-size: 50%;
+	top: -8px;
+	font-size: 75%;
+	position: relative;
+}
+
+.header > span span:hover:before {
+	content: attr(data-content);
+	text-transform: none;
+	text-indent: 0;
+	letter-spacing: 0;
+	font-weight: 300;
+	font-size: 110%;
+	padding: 0.8em 1em;
+	line-height: 1.2;
+	text-align: left;
+	left: auto;
+	margin-left: 4px;
+	position: absolute;
+	color: #47a3da;
+	background: #fff;
+}
+
+.header nav {
+	float: left;
+	text-align: center;
+	margin-left: 1.5em;
+	display: block;
+}
+
+.header nav a {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	width: 2.5em;
+	height: 2.5em;
+	background: #47a3da;
+	border-radius: 50%;
+	margin: 0 0.1em;
+	border: 3px solid #fff;
+}
+
+.header nav a > span {
+	display: none;
+}
+
+.header nav a:hover:before {
+	content: attr(data-info);
+	color: #fff;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	pointer-events: none;
+}
+
+.header nav a:hover {
+	background: #fff;
+}
+
+.header nav a:hover:after {
+	color: #47a3da;
+}
+
+.demos {
+	display: inline-block;
+	line-height: 2.4em;
+	margin-left: 1em;
+	float: right;
+}
+
+.demos a {
+	display: inline-block;
+	color: #fff;
+	margin: 0 0.5em;
+}
+
+.demos a:hover,
+.demos a:focus,
+.demos a.current {
+	color: rgba(0,0,0,.4);
+}
+
+@media screen and (max-width: 73.375em) {
+	.header h1,
+	.header nav,
+	.demos {
+		float: none;
+		margin: 0 auto;
+		padding: 0.15em 0;
+	}
+	.header > span {
+		padding: 0;
+	}
+	.header > span span:after {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 30.25em) {
+	.header nav { display: none; }
+}
+
+
+/* Credit to CoDrops for Providing the Blueprint for this website */

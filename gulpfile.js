@@ -3,16 +3,19 @@ var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, ug
 
 //load all of our dependencies
 //add more here if you want to include more libraries
-gulp        = require('gulp');
-gutil       = require('gulp-util');
-concat      = require('gulp-concat');
-uglify      = require('gulp-uglify');
-sass        = require('gulp-sass');
-imagemin    = require('gulp-imagemin');
-cache       = require('gulp-cache');
-minifyCSS   = require('gulp-minify-css');
-connect     = require('gulp-connect');
-del         = require('del');
+var gulp            = require('gulp'),
+    gutil           = require('gulp-util'),
+    concat          = require('gulp-concat'),
+    uglify          = require('gulp-uglify'),
+    sass            = require('gulp-sass'),
+    imagemin        = require('gulp-imagemin'),
+    cache           = require('gulp-cache'),
+    minifyCSS       = require('gulp-minify-css'),
+    connect         = require('gulp-connect'),
+    del             = require('del'),
+    autoprefixer    = require('gulp-autoprefixer'),
+    jshint          = require('gulp-jshint'),
+    notify          = require('gulp-notify');
 
 gulp.task('connect', function() {
   connect.server({
